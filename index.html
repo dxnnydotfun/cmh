@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="icon.svg" />
+        <title></title>
+        <meta name="description" content="" />
+
+        <meta name="twitter:site" content="@" />
+        <meta name="twitter:creator" content="@" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="twitter-image.png" />
+        <meta name="twitter:image:alt" content="" />
+        <link rel="canonical" href="" />
+        <link rel="stylesheet" href="stylesheet.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="robots" content="noindex, nofollow" />
+
+        <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
+    </head>
+
+    <body>
+        <header>
+            <style>
+                @scope {
+                    :scope {
+                        gap: 3vw;
+                        width: 100%;
+                        display: flex;
+                        padding: 3vw 9vw;
+                        position: fixed;
+                        align-items: center;
+
+                        img {
+                            height: 48rem;
+                        }
+
+                        div {
+                            flex: auto;
+                        }
+                    }
+                }
+            </style>
+
+            <div>
+                <a href=""><img src="img-logo.svg" loading="lazy" alt="" /></a>
+            </div>
+            <a href="">Our team</a>
+            <a href="">Articles</a>
+            <a class="button" href="#book-a-consultation">Book a consultation</a>
+        </header>
+
+        <main>
+            <header>
+                <style>
+                    @scope {
+                        :scope {
+                            padding: 9vw;
+                            display: grid;
+
+                            background:
+                                url(background-index.png) 54.5vw calc(6vw + 48rem) / auto 92% no-repeat,
+                                linear-gradient(-45deg, hsl(20 90% 90%), hsl(20 10% 90%));
+                            padding-top: calc(12vw + 50rem);
+                            min-height: 100vh;
+
+                            @media (width > 800px) {
+                                gap: 7vw;
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                        }
+                    }
+                </style>
+
+                <div>
+                    <h1>Overcome life’s challenges, improve mental health and achieve personal goals.</h1>
+                    <p>
+                        At CMH Counselling and psychotherapy we provide individually tailored therapeutic treatment to
+                        help you thrive and reach your full potential. Our Therapists are trained to the highest
+                        standards, offering confidential support and guidance to help you along your journey. Your
+                        wellbeing is of upmost importance to us and we will go above and beyond to ensure your mental
+                        and emotional wellbeing is looked after in our care.
+                    </p>
+                    <h2>Cost per session: <u>£60</u></h2>
+                    <p>Concessions may be considered for those on a low income.</p>
+                </div>
+
+                <div></div>
+            </header>
+
+            <div>
+                <style>
+                    @scope {
+                        :scope {
+                            padding: 9vw;
+
+                            display: grid;
+
+                            @media (width > 800px) {
+                                gap: 7vw;
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                        }
+                    }
+                </style>
+
+                <div>
+                    <h2>Getting started</h2>
+                    <p>
+                        We offer free consultations to clients who are considering embarking on a journey with us and
+                        may have questions about starting therapy. Please complete the form below and we will get back
+                        to you on the same day.
+                    </p>
+                </div>
+                <div>
+                    <h2 id="book-a-consultation">Book a consultation</h2>
+                    <form>
+                        <input type="email" placeholder="Email address" required />
+                        <textarea placeholder="Please describe..." required></textarea>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- why cmh -->
+
+            <section>
+                <style>
+                    @scope {
+                        :scope {
+                            color: white;
+                            padding: 9vw;
+                            background: hsl(260 100% 50%);
+                        }
+                    }
+                </style>
+                <h2>Why CMH?</h2>
+
+                <div>
+                    <style>
+                        @scope {
+                            :scope {
+                                gap: 7vw;
+                                display: grid;
+
+                                @media (width > 700px) {
+                                    grid-template-columns: repeat(2, 1fr);
+                                }
+
+                                @media (width > 1439px) {
+                                    grid-template-columns: repeat(4, 1fr);
+                                }
+                            }
+                        }
+                    </style>
+
+                    <div>
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi neque praesentium nostrum
+                            ratione asperiores in animi excepturi aliquid aliquam, molestiae quaerat recusandae
+                            necessitatibus adipisci, corporis dicta quo consequuntur facere aut.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi neque praesentium nostrum
+                            ratione asperiores in animi excepturi aliquid aliquam, molestiae quaerat recusandae
+                            necessitatibus adipisci, corporis dicta quo consequuntur facere aut.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi neque praesentium nostrum
+                            ratione asperiores in animi excepturi aliquid aliquam, molestiae quaerat recusandae
+                            necessitatibus adipisci, corporis dicta quo consequuntur facere aut.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>lorem</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi neque praesentium nostrum
+                            ratione asperiores in animi excepturi aliquid aliquam, molestiae quaerat recusandae
+                            necessitatibus adipisci, corporis dicta quo consequuntur facere aut.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <style>
+                @scope {
+                    :scope {
+                        gap: 3vw;
+                        width: 100%;
+                        display: flex;
+                        padding: 3vw 9vw;
+                        align-items: center;
+
+                        img {
+                            height: 48rem;
+                        }
+
+                        span {
+                            flex: auto;
+                        }
+                    }
+                }
+            </style>
+
+            <span>Copyright</span>
+            <a href=""><img src="" alt="" /></a>
+            <a href=""><img src="" alt="" /></a>
+            <a href="">Follow on X</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+@font-face {
+    font-display: swap;
+    src: url(font.woff2);
+    font-family: lexend;
+}
+
+:root {
+    --font-size-base: 16rem;
+    --font-size-scale: 1.5;
+    --font-size-base: 16rem;
+
+    --color-brand: hsl(260 100% 50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 134rem;
+}
+
+body {
+    margin: 0;
+    user-select: none;
+    background: white;
+    color: hsl(from white h s 10%);
+    font:
+        600 16rem/1.5 lexend,
+        system-ui;
+}
+
+p {
+    text-indent: -1rem;
+    font-size: 19.2rem;
+    text-box: trim-both cap alphabetic;
+    margin: 48rem 0 0 0;
+}
+
+h3 {
+    font-weight: 900;
+    text-indent: -2rem;
+    font-size: 23.04rem;
+    text-box: trim-both cap alphabetic;
+    margin: 48rem 0 0 0;
+}
+
+h2 {
+    font-weight: 900;
+    text-indent: -2rem;
+    font-size: 27.648rem;
+    text-box: trim-both cap alphabetic;
+    margin: 48rem 0 0 0;
+}
+
+h1 {
+    font-weight: 900;
+    text-indent: -3rem;
+    font-size: 33.1776rem;
+    text-box: trim-both cap alphabetic;
+    margin: 0;
+}
+
+:where(a) {
+    color: inherit;
+}
+
+:where(button) {
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+:is(a, button):not(.button) {
+    text-underline-position: under;
+    text-decoration-thickness: 2rem;
+}
+
+.button {
+    height: 48rem;
+    color: white;
+    padding: 0 24rem;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 14.4rem;
+    background: hsl(260 100% 50%);
+    text-decoration: none;
+    border: 3rem solid hsl(260 100% 30%);
+}
+
+:is(a, button):hover {
+    filter: brightness(110%);
+}
+
+img {
+    display: block;
+}
+
+u {
+    text-decoration: none;
+    padding: 0 10rem 0 5rem;
+    margin: 0 -10rem 0 -5rem;
+    background: url(background-underline.svg) bottom/100% 33.333% no-repeat;
+    background-blend-mode: overlay;
+}
+
+form {
+    margin-top: 48rem;
+}
+
+input {
+    height: 48rem;
+}
+
+textarea {
+    margin: 10rem 0;
+    min-height: 300rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    padding: 18rem 24rem;
+    border: 3rem solid hsl(260 100% 90%);
+    background: white;
+    color: hsl(from white h s 10%);
+    font:
+        600 16rem/1.5 lexend,
+        system-ui;
+    border-radius: 14.4rem;
+    resize: none;
+    transition: 300ms;
+}
+
+:is(input, textarea):focus {
+    border-left-width: 15rem;
+}
+
+:is(input, textarea):invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+*:focus {
+    outline: none;
+    /* just another color? */
+}
